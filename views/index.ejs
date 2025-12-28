@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media to URL</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; width: 90%; max-width: 400px; }
+        h2 { color: #333; }
+        input[type="file"] { margin: 20px 0; border: 1px solid #ddd; padding: 10px; width: 100%; border-radius: 5px; }
+        button { background: #007bff; color: white; border: none; padding: 12px 20px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Media to URL</h2>
+        <p>Upload gambar, video, atau dokumen.</p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="media" required>
+            <button type="submit">Generate Public Link</button>
+        </form>
+    </div>
+</body>
+</html>
